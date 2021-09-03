@@ -77,7 +77,7 @@ Page {
 			}
 			onClicked:{
 				root.mainBillboard.addFeed(modelData.url);
-
+                SearchFeeds.register(modelData.url, root.token, function(){});
 				mainLayout.removePages(_addrsspage);
 			}
 		}

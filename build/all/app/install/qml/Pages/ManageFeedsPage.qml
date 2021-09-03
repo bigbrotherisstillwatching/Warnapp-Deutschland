@@ -69,6 +69,7 @@ Page {
 					onTriggered: {
                         if(root.urls != null && root.urls != undefined && root.urls.length != 0 && root.urls.length != -1){
 						root.mainBillboard.removeFeed(modelData.url);
+                        SearchFeeds.del(modelData.url, root.token, function(){});
                         showareas(root.urls);
                         }
 					}

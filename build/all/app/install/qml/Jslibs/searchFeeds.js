@@ -2961,13 +2961,26 @@ function rss2name(name, callback){
 
 var apiData = {
 	'searchDomain' : {
-		'host' : 'https://infoportal.ddns.net/entwickler/register.php?rss='
+		'host' : 'https://infoportal.ddns.net/entwickler'
 	}
 }
 function register(domain, token, callback) {
     console.log("TOKEN:", token);
 	var xhr = new XMLHttpRequest();
-	xhr.open("GET",apiData['searchDomain']['host']+domain+"&token="+token);
+	xhr.open("GET",apiData['searchDomain']['host']+'/register.php?rss='+domain+"&token="+token);
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4 && xhr.status == 200) {
+			callback();
+		}
+	};
+	xhr.send();
+}
+function del(domain, token, callback) {
+    console.log("delete");
+    console.log("DOM:", domain);
+    console.log("TOKEN:", token);
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET",apiData['searchDomain']['host']+'/delete.php?rss='+domain+"&token="+token);
 	xhr.onreadystatechange = function() {
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			callback();
