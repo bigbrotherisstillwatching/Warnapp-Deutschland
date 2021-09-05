@@ -4,12 +4,7 @@
 //pushexec
 //push.json
 //push-apparmor.json
-//assets/splash.png
-//assets/dorf.svg
-//assets/splash.pnm
 //assets/logo.svg
-//assets/logo.png
-//assets/logo.pnm
 //assets/splash.svg
 //qml/helpers/CachedHttpRequest.qml
 //qml/helpers/DispatcherHandler.qml

@@ -7,7 +7,8 @@
         "s60w79.warnapp-deutschland": {
             "apparmor": "s60w79.warnapp-deutschland.apparmor",
             "desktop":  "s60w79.warnapp-deutschland.desktop",
-            "content-hub": "content-hub.json"
+            "content-hub": "content-hub.json",
+            "urls": "warnapp-deutschland.url-dispatcher"
 
         },
         "push": {

@@ -21,12 +21,12 @@ MainView {
          id: dialog
          Dialog {
              id: dialogue
-             title: "Bitte bachten!"
-             text: "Leider sind die Push Meldungen in dieser App Version noch in einem sehr frühen Stadium. Um zu erfahren wie sie mit dieser App am besten und schnellsten informiert werden können, lesen Sie sich bitte die erste Anleitung unten durch. Wenn sie keine Push Benachrichtigungen erhalten wollen, können Sie diese in den Systemeinstellungen unter Benachrichtigungen für diese App ausschalten."
+             title: "Bitte beachten:"
+             text: "In dieser Version funktionieren Push Benachrichtigungen, auch wenn die App gerade nicht aktiv ist. Diese Funktion muss jedoch in dessen zuverlässigkeit noch ausgebaut werden.\nAchten sie darauf, die App regelmäßig aufzurufen.\nBei Fehlern beachten sie folgende Hinweise:"
              Button {
-                 text: "Anleitung (online)"
+                 text: "Weitere Informationen (online)"
                  color: UbuntuColors.green
-                 onClicked: Qt.openUrlExternally("https://infoportal.ddns.net/entwickler/hinweis.html")
+                 onClicked: Qt.openUrlExternally("https://infoportal.ddns.net/entwickler/hinweis2.html")
              }
              Button {
                  text: "Warnapp testen (online)"
