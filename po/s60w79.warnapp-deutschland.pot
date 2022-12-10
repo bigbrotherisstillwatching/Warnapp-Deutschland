@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: s60w79.warnapp-deutschland\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-10 16:24+0000\n"
+"POT-Creation-Date: 2022-12-10 16:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,37 +38,37 @@ msgid ""
 "Denken sie an ihre Mitmenschen, teilen sie wichtige Meldungen auch per SMS!"
 msgstr ""
 
-#: ../qml/Main.qml:148 ../qml/Main.qml:152 ../qml/Pages/Information.qml:57
+#: ../qml/Main.qml:149 ../qml/Main.qml:153 ../qml/Pages/Information.qml:57
 #: s60w79.warnapp-deutschland.desktop.in.h:1
 msgid "Warnapp Deutschland"
 msgstr ""
 
-#: ../qml/Main.qml:164 ../qml/Pages/AddRssPage.qml:46
+#: ../qml/Main.qml:165 ../qml/Pages/AddRssPage.qml:46
 #: ../qml/Pages/ManageFeedsPage.qml:23
 msgid "Gebiet hinzufügen"
 msgstr ""
 
-#: ../qml/Main.qml:171 ../qml/Pages/SettingsPage.qml:13
+#: ../qml/Main.qml:172 ../qml/Pages/SettingsPage.qml:13
 msgid "Einstellungen"
 msgstr ""
 
-#: ../qml/Main.qml:179
+#: ../qml/Main.qml:180
 msgid "Ascending"
 msgstr ""
 
-#: ../qml/Main.qml:179
+#: ../qml/Main.qml:180
 msgid "Descending"
 msgstr ""
 
-#: ../qml/Main.qml:179
+#: ../qml/Main.qml:180
 msgid "Toggle Sort (%1) "
 msgstr ""
 
-#: ../qml/Main.qml:251
+#: ../qml/Main.qml:252
 msgid "Gebiet hinzugefügt: %1"
 msgstr ""
 
-#: ../qml/Main.qml:284
+#: ../qml/Main.qml:285
 msgid "Gebiet hinzu gefügt : %1"
 msgstr ""
 

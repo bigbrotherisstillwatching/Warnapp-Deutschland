@@ -134,7 +134,8 @@ MainView {
              }
          }
     }
-        Component.onCompleted:PopupUtils.open(dialog)
+        Component.onCompleted:appSettings.urls=[]
+        //PopupUtils.open(dialog)
 		id:mainLayout
 		anchors {
 			fill:parent

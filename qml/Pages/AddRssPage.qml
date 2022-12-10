@@ -81,13 +81,13 @@ Page {
 				var informed = false
 				function loader(url){
 					root.mainBillboard.addFeed(url);
-					SearchFeeds.register(url, "111", function(suc){
+					SearchFeeds.register(url, root.token, function(suc){
 						console.log(suc);
 						if(!suc && !informed)PopupUtils.open(regfail);
 						//mainLayout.removePages(_addrsspage);
 					});
 				}
-				if(modelData.Region == "Landkreis" || modelData.Region == "Stadtstaat" || modelData.Region == "Kreisfreie Stadt" || modelData.Region == "Regionalverband" || modelData.Region == "Kreis"){
+				if(!modelData.url.isArray){
 					//list entry represents only one county
 					loader(modelData.url);
 				}else{
