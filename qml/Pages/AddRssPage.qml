@@ -78,15 +78,25 @@ Page {
 				}
 			}
 			onClicked:{
-				root.mainBillboard.addFeed(modelData.url);
 				var informed = false
-				//PopupUtils.open(fail)
-                SearchFeeds.register(modelData.url, "111", function(suc){
-					console.log(suc);
-					if(!suc && !informed)PopupUtils.open(regfail);
-					mainLayout.removePages(_addrsspage);
-				});
-				
+				function loader(url){
+					root.mainBillboard.addFeed(url);
+					SearchFeeds.register(url, "111", function(suc){
+						console.log(suc);
+						if(!suc && !informed)PopupUtils.open(regfail);
+						//mainLayout.removePages(_addrsspage);
+					});
+				}
+				if(modelData.Region == "Landkreis" || modelData.Region == "Stadtstaat" || modelData.Region == "Kreisfreie Stadt"){
+					//list entry represents only one county
+					loader(modelData.url);
+				}else{
+					//list entry represents a state or all counties : enroll for all attached counties
+					modelData.url.forEach(function(sUrl){
+						//go threw
+						loader(sUrl);
+					});
+				}
 			}
 		}
 	}

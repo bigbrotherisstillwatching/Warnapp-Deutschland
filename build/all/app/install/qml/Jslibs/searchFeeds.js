@@ -5,13 +5,13 @@
  * */
 
 var kreisliste = [ 
-    {   "AGS": "0",
+    {   "AGS": "",
         "Region": "Bundesrepublik",
         "Kreisfreie Stadt, Kreis/Landkreis": "Alle",
         "Fläche": "10000",
         "Bevölkerung": "90000000"
     },
-    {   "AGS": "0",
+    {   "AGS": "",
         "Region": "Bundesrepublik",
         "Kreisfreie Stadt, Kreis/Landkreis": "Deutschland",
         "Fläche": "10000",
@@ -537,7 +537,7 @@ var kreisliste = [
     },
     {
         "AGS": "04011",
-        "Region": "Stadtstaat",
+        "Region": "Kreisfreie Stadt",
         "Kreisfreie Stadt, Kreis/Landkreis": "Bremen",
         "Fläche": "325,42",
         "Bevölkerung": "548547"
@@ -3026,7 +3026,30 @@ function searchDomain(domain, callback) {
     var liste = [];
      for(var nr = 0; nr < results.length; nr++){
          //make json list from results:
-         liste.push({"title":results[nr]["data"]["Kreisfreie Stadt, Kreis/Landkreis"], "description":results[nr]["data"]["Region"], "url":"https://warnung.bund.de/api31/mowas/rss/"+results[nr]["data"]["AGS"]+"0000000.rss", "favicon":null});
+         if(results[nr]["data"]["AGS"].length < 3){
+             //not a regular county (but country or state)
+             var counties = []
+             kreisliste.forEach(function(kreis){
+                 //generate list of all attached counties:
+                 var prefix = results[nr]["data"]["AGS"];
+                 if(results[nr]["data"]["AGS"].length == 1){
+                     //respect that one digit state ags counties are begining with 0X e.g. Schleswig Hollstein: 01....
+                     prefix = "0"+results[nr]["data"]["AGS"]
+                 }
+                 if(kreis["AGS"].startsWith(prefix)){
+                     //the state ags is a prefix of the county AGS, so the county is in the state.
+                     if(kreis["AGS"].length > 3){
+                         //only append real counties, not states
+                        counties.push("https://warnung.bund.de/api31/mowas/rss/"+kreis["AGS"]+"0000000.rss");
+                     }
+                 }
+             });
+             console.log("state",results[nr]["data"]["AGS"], counties);
+             liste.push({"title":results[nr]["data"]["Kreisfreie Stadt, Kreis/Landkreis"], "description":results[nr]["data"]["Region"], "url":counties, "favicon":null});
+         }else{
+             //regular county
+            liste.push({"title":results[nr]["data"]["Kreisfreie Stadt, Kreis/Landkreis"], "description":results[nr]["data"]["Region"], "url":"https://warnung.bund.de/api31/mowas/rss/"+results[nr]["data"]["AGS"]+"0000000.rss", "favicon":null});
+         }
      }
      callback(liste);
     //callback([{"title":"...", "description":"...", "url":"https://warnung.bund.de/api31/mowas/rss/010010000000.rss", "favicon":null}]);
