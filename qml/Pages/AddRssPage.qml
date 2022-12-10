@@ -87,7 +87,7 @@ Page {
 						//mainLayout.removePages(_addrsspage);
 					});
 				}
-				if(modelData.Region == "Landkreis" || modelData.Region == "Stadtstaat" || modelData.Region == "Kreisfreie Stadt"){
+				if(modelData.Region == "Landkreis" || modelData.Region == "Stadtstaat" || modelData.Region == "Kreisfreie Stadt" || modelData.Region == "Regionalverband" || modelData.Region == "Kreis"){
 					//list entry represents only one county
 					loader(modelData.url);
 				}else{
