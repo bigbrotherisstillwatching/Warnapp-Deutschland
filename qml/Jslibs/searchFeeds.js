@@ -3067,9 +3067,17 @@ function register(domain, token, callback) {
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET",apiData['searchDomain']['host']+'/register.php?rss='+domain+"&token="+token);
 	xhr.onreadystatechange = function() {
-		if (xhr.readyState == 4 && xhr.status == 200) {
-			callback();
-		}
+        console.log("REGSTATUS", xhr.status);
+        if(xhr.readyState == 4){
+            //ready
+		if (xhr.status == 200) {
+            console.log("SUC");
+			callback(true);
+		}else{
+            console.log("FAIL");
+            callback(false);
+        }
+        }
 	};
 	xhr.send();
 }

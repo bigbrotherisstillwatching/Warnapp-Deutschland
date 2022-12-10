@@ -17,6 +17,7 @@ import "Jslibs/searchFeeds.js" as GetHelper
 import Ubuntu.PushNotifications 0.1
 
 MainView {
+	
     Component {
          id: dialog
          Dialog {
@@ -58,6 +59,7 @@ MainView {
     property var newfeed : [];
     property alias pushtoken : root.token
     property alias oldfeed: root.oldfeed
+    
 	onUrlsChanged : {
 		console.log("onUrlsChanged")
 		mainFeed.updateFeed();
@@ -118,6 +120,20 @@ MainView {
 	// ---------------------------- UI ----------------------
 	
 	AdaptivePageLayout {
+		Component {
+         id: regfail
+         Dialog {
+             
+             id: dia
+             title: "Fehler"
+             text: "Das Gebiet wurde hinzu gefügt, aber die Push benachrichtigungen konnten nicht aktiviert werden.\nBitte starten Sie die App später neu.\nWenn dann eine Push benachrichtigung erscheint, werden Sie auch später mit Push Benachrichtigungen informiert."
+             Button {
+                 text: "Schließen"
+                 color: UbuntuColors.red
+                 onClicked: PopupUtils.close(dia)
+             }
+         }
+    }
         Component.onCompleted:PopupUtils.open(dialog)
 		id:mainLayout
 		anchors {

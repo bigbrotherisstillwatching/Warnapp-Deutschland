@@ -2,7 +2,7 @@
 import QtQuick 2.9
 import Ubuntu.Components 1.3
 import QtQuick.Controls 2.2 as QControls
-
+import Ubuntu.Components.Popups 1.3
 import "../Components"
 import "../Jslibs/searchFeeds.js" as SearchFeeds
 
@@ -15,6 +15,7 @@ Page {
 		id:pageHeader
 		title:i18n.tr("Neues Gebiet hinzufügen")
 	}
+	
 	Row {
 		id:searchRow
 		anchors {
@@ -48,6 +49,7 @@ Page {
 		}
 	}
 	UbuntuListView {
+		
 		id:searchResults
 		anchors {
 			top:searchRow.bottom
@@ -77,8 +79,14 @@ Page {
 			}
 			onClicked:{
 				root.mainBillboard.addFeed(modelData.url);
-                SearchFeeds.register(modelData.url, root.token, function(){});
-				mainLayout.removePages(_addrsspage);
+				var informed = false
+				//PopupUtils.open(fail)
+                SearchFeeds.register(modelData.url, "111", function(suc){
+					console.log(suc);
+					if(!suc && !informed)PopupUtils.open(regfail);
+					mainLayout.removePages(_addrsspage);
+				});
+				
 			}
 		}
 	}
