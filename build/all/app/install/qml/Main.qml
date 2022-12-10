@@ -311,7 +311,7 @@ MainView {
             for(var i in root.urls) {
             //go throw all RSS urls
             //RssAPI have to do that, because the QML pages are confined by the apparmor
-            GetHelper.register(root.urls[i], root.token, function(){});
+            GetHelper.register(root.urls[i], root.token, function(suc){});
         }
         
         
