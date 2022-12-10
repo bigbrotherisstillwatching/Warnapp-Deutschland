@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: s60w79.warnapp-deutschland.s60w79\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-05 20:57+0000\n"
+"POT-Creation-Date: 2022-02-07 15:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,7 +125,7 @@ msgid "Informationen"
 msgstr ""
 
 #: ../qml/Pages/Information.qml:18
-msgid "Anleitungen & Datenschutz"
+msgid "Anleitungen"
 msgstr ""
 
 #: ../qml/Pages/Information.qml:19
@@ -138,6 +138,14 @@ msgstr ""
 
 #: ../qml/Pages/Information.qml:21
 msgid "Spenden (an S60W79 oder Darkeye)"
+msgstr ""
+
+#: ../qml/Pages/Information.qml:22
+msgid "Nutzer Statistiken"
+msgstr ""
+
+#: ../qml/Pages/Information.qml:23
+msgid "Datenschutz"
 msgstr ""
 
 #: ../qml/Pages/Information.qml:25
@@ -156,17 +164,17 @@ msgstr ""
 msgid "Version %1"
 msgstr ""
 
-#: ../qml/Pages/MainFeedPage.qml:180
+#: ../qml/Pages/MainFeedPage.qml:179
 msgid "Meldungen werden geladen"
 msgstr ""
 
-#: ../qml/Pages/MainFeedPage.qml:181
+#: ../qml/Pages/MainFeedPage.qml:180
 msgid ""
 "Bisher sind keine Gebiete in der Benachrichtigungsliste. Tippen sie auf '+' "
 "um ein Landkreis oder eine Kreisfreie Stadt hinzu zu fügen."
 msgstr ""
 
-#: ../qml/Pages/MainFeedPage.qml:275 ../qml/Pages/ManageBookmarksPage.qml:18
+#: ../qml/Pages/MainFeedPage.qml:274 ../qml/Pages/ManageBookmarksPage.qml:18
 msgid "Gespeicherte Meldungen"
 msgstr ""
 

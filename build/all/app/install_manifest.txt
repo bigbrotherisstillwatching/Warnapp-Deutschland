@@ -31,5 +31,5 @@
 //qml/Pages/ManageBookmarksPage.qml
 //qml/Pages/ManageFeedsPage.qml
 //s60w79.warnapp-deutschland.desktop
-/share/locale/nl/LC_MESSAGES/s60w79.warnapp-deutschland.s60w79.mo
-/share/locale/fr/LC_MESSAGES/s60w79.warnapp-deutschland.s60w79.mo
+/share/locale/fr/LC_MESSAGES/s60w79.warnapp-deutschland.mo
+/share/locale/nl/LC_MESSAGES/s60w79.warnapp-deutschland.mo

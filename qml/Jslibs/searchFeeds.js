@@ -1,9 +1,107 @@
 /*
  * List by Felixebert, published on github
  * https://github.com/opendatalab-de/checkgermany/blob/master/frontend/src/data/landkreise.json
+ * (Country+ states added by S60W79
  * */
 
-var kreisliste = [ {
+var kreisliste = [ 
+    {   "AGS": "0",
+        "Region": "Bundesrepublik",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Alle",
+        "Fläche": "10000",
+        "Bevölkerung": "90000000"
+    },
+    {   "AGS": "0",
+        "Region": "Bundesrepublik",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Deutschland",
+        "Fläche": "10000",
+        "Bevölkerung": "90000000"
+    },
+    {   "AGS": "1",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Schleswig-Hollstein",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "3",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Niedersachsen",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "5",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Nordrhein-Westfalen",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "5",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "NRW",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "6",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Hessen",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "7",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Rheinland-Pfalz",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "8",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Baden-Württemberg",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "9",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Bayern",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "10",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Saarland",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "12",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Brandenburg",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "13",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Mecklenburg-Vorpommern",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "14",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Sachsen",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "15",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Sachsen-Anhalt",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {   "AGS": "16",
+        "Region": "Bundesland",
+        "Kreisfreie Stadt, Kreis/Landkreis": "Thüringen",
+        "Fläche": "10000",
+        "Bevölkerung": "0"
+    },
+    {
         "AGS": "01001",
         "Region": "Kreisfreie Stadt",
         "Kreisfreie Stadt, Kreis/Landkreis": "Flensburg",
@@ -110,7 +208,7 @@ var kreisliste = [ {
     },
     {
         "AGS": "02000",
-        "Region": "Kreisfreie Stadt",
+        "Region": "Stadtstaat",
         "Kreisfreie Stadt, Kreis/Landkreis": "Hamburg, Freie und Hansestadt",
         "Fläche": "755,3",
         "Bevölkerung": "1746342"
@@ -144,7 +242,7 @@ var kreisliste = [ {
         "Bevölkerung": "171475"
     },
     {
-        "AGS": "03152",
+        "AGS": "03159",
         "Region": "Landkreis",
         "Kreisfreie Stadt, Kreis/Landkreis": "Göttingen",
         "Fläche": "1117,24",
@@ -172,8 +270,8 @@ var kreisliste = [ {
         "Bevölkerung": "134661"
     },
     {
-        "AGS": "03156",
-        "Region": "Landkreis",
+        "AGS": "03159",
+        "Region": "Landkreis; = Göttingen",
         "Kreisfreie Stadt, Kreis/Landkreis": "Osterode am Harz",
         "Fläche": "636,02",
         "Bevölkerung": "74367"
@@ -439,7 +537,7 @@ var kreisliste = [ {
     },
     {
         "AGS": "04011",
-        "Region": "Kreisfreie Stadt",
+        "Region": "Stadtstaat",
         "Kreisfreie Stadt, Kreis/Landkreis": "Bremen",
         "Fläche": "325,42",
         "Bevölkerung": "548547"
@@ -2280,7 +2378,7 @@ var kreisliste = [ {
     },
     {
         "AGS": "11000",
-        "Region": "Kreisfreie Stadt",
+        "Region": "Stadtstaat",
         "Kreisfreie Stadt, Kreis/Landkreis": "Berlin",
         "Fläche": "891,68",
         "Bevölkerung": "3421829"

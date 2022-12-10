@@ -1,0 +1,132 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app
+[  0%] Built target s60w79.warnapp-deutschland_FILES
+[ 25%] Merging translations into s60w79.warnapp-deutschland.desktop...
+[ 50%] Built target pofiles_1
+[ 75%] Generating translation template
+[100%] Built target pofiles_2
+Wrote s60w79.warnapp-deutschland.desktop.in.h
+Merging translations into s60w79.warnapp-deutschland.desktop.
+[100%] Built target s60w79.warnapp-deutschland.desktop
+[100%] Built target s60w79.warnapp-deutschland.pot
+[  0%] Built target s60w79.warnapp-deutschland_FILES
+[ 25%] Merging translations into s60w79.warnapp-deutschland.desktop...
+Merging translations into s60w79.warnapp-deutschland.desktop.
+[ 25%] Built target s60w79.warnapp-deutschland.desktop
+[ 50%] Generating translation template
+Wrote s60w79.warnapp-deutschland.desktop.in.h
+[ 50%] Built target s60w79.warnapp-deutschland.pot
+[ 75%] Built target pofiles_1
+[100%] Built target pofiles_2
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//manifest.json
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//content-hub.json
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//s60w79.warnapp-deutschland.apparmor
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//pushexec
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//push.json
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//push-apparmor.json
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//assets
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//assets/logo.svg
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//assets/splash.svg
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/helpers
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/helpers/CachedHttpRequest.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/helpers/DispatcherHandler.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Jslibs
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Jslibs/searchFeeds.js
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Jslibs/rssAPI.js
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Jslibs/notify.js
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/FeedCache.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/ShareItem.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/FeedsModel.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/GenerateInputForSettings.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/RssChannelItems.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/RssChannel.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/EventBillboard.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/UI
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/UI/Feed.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/UI/PageHeaderWithBottomText.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/UI/SharePage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/UI/FeedItem.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Main.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/AddRssPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/MainFeedPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/EnteryViewPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/SettingsPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/Information.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/ManageBookmarksPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/ManageFeedsPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//s60w79.warnapp-deutschland.desktop
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install/share/locale/nl/LC_MESSAGES/s60w79.warnapp-deutschland.mo
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install/share/locale/fr/LC_MESSAGES/s60w79.warnapp-deutschland.mo
+non-network local connections being added to access control list
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app
+[ 25%] Built target pofiles_1
+[ 50%] Merging translations into s60w79.warnapp-deutschland.desktop...
+[ 75%] Generating translation template
+Merging translations into s60w79.warnapp-deutschland.desktop.
+[ 75%] Built target s60w79.warnapp-deutschland_FILES
+[ 75%] Built target s60w79.warnapp-deutschland.desktop
+Wrote s60w79.warnapp-deutschland.desktop.in.h
+[100%] Built target pofiles_2
+[100%] Built target s60w79.warnapp-deutschland.pot
+[  0%] Built target s60w79.warnapp-deutschland_FILES
+[ 25%] Merging translations into s60w79.warnapp-deutschland.desktop...
+Merging translations into s60w79.warnapp-deutschland.desktop.
+[ 25%] Built target s60w79.warnapp-deutschland.desktop
+[ 50%] Generating translation template
+Wrote s60w79.warnapp-deutschland.desktop.in.h
+[ 50%] Built target s60w79.warnapp-deutschland.pot
+[ 75%] Built target pofiles_1
+[100%] Built target pofiles_2
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//manifest.json
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//content-hub.json
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//s60w79.warnapp-deutschland.apparmor
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//pushexec
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//push.json
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//push-apparmor.json
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//assets
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//assets/logo.svg
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//assets/splash.svg
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/helpers
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/helpers/CachedHttpRequest.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/helpers/DispatcherHandler.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Jslibs
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Jslibs/searchFeeds.js
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Jslibs/rssAPI.js
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Jslibs/notify.js
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/FeedCache.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/ShareItem.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/FeedsModel.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/GenerateInputForSettings.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/RssChannelItems.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/RssChannel.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/EventBillboard.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/UI
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/UI/Feed.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/UI/PageHeaderWithBottomText.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/UI/SharePage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Components/UI/FeedItem.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Main.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/AddRssPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/MainFeedPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/EnteryViewPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/SettingsPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/Information.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/ManageBookmarksPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//qml/Pages/ManageFeedsPage.qml
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install//s60w79.warnapp-deutschland.desktop
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install/share/locale/nl/LC_MESSAGES/s60w79.warnapp-deutschland.mo
+-- Installing: /home/marco/Documents/Projekte/warnapp-git/warnapp-deutschland/build/all/app/install/share/locale/fr/LC_MESSAGES/s60w79.warnapp-deutschland.mo
+non-network local connections being added to access control list

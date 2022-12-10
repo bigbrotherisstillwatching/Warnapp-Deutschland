@@ -82,11 +82,12 @@ Page {
 		channelItems.statusChanged.connect(function() {
             
 			if (channelItems.status == XmlListModel.Ready) {
+				
 				var channelDomain = (""+channelData["feedUrl"]).match(/https?:\/\/([^\/]+)/).pop();
 				for(var i=0; i < channelItems.count && i < appSettings.itemsToLoadPerChannel; i++) {
 					var item = channelItems.get(i);
 					//console.log("channel items :" + JSON.stringify(item));
-					item["chImageUrl"] = channelData["imageUrl"];
+					item["chImageUrl"] = "";
 					item['domain'] = channelDomain
 					item["channel"] = channelData["titleText"] ? channelData["titleText"] : channelDomain ;
 					try {
@@ -101,8 +102,9 @@ Page {
 					} catch(e) {/*If we can't get a date we cant get a date...*/}
 					item["updateDate"] = (new Date(Date.parse(item["updated"]))).toDateString();
 					item["itemData"] =  JSON.parse(JSON.stringify(item));
+					item["title"]="";
+					console.log("titleTXT: ", channelData["titleText"], "title", item["title"], "des", item["description"], "date", item["updateDate"], "chan", item["channel"]); 
 					feedList.model.append(item);
-                    
                     //push message section:
                     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                     //direct push push now disabled!

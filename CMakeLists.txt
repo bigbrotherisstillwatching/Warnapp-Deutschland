@@ -12,9 +12,9 @@ execute_process(
 set(QT_IMPORTS_DIR "lib/${ARCH_TRIPLET}")
 
 set(PROJECT_NAME "s60w79.warnapp-deutschland")
-set(VERSION "0.3")
+set(VERSION "0.3.1")
 set(APP_ID "s60w79.warnapp-deutschland")
-set(FULL_PROJECT_NAME "s60w79.warnapp-deutschland.s60w79")
+set(FULL_PROJECT_NAME "s60w79.warnapp-deutschland")
 set(CMAKE_INSTALL_PREFIX /)
 set(DATA_DIR /)
 set(DESKTOP_FILE_NAME ${PROJECT_NAME}.desktop)

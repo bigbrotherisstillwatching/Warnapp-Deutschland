@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pofiles_1"
-  "nl.gmo"
+  "fr.gmo"
 )
 
 # Per-language clean rules from dependency scanning.

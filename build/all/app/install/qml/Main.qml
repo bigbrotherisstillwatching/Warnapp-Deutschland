@@ -22,7 +22,7 @@ MainView {
          Dialog {
              id: dialogue
              title: "Bitte beachten:"
-             text: "In dieser Version funktionieren Push Benachrichtigungen, auch wenn die App gerade nicht aktiv ist. Diese Funktion muss jedoch in dessen zuverlässigkeit noch ausgebaut werden.\nAchten sie darauf, die App regelmäßig aufzurufen.\nBei Fehlern beachten sie folgende Hinweise:"
+             text: "In dieser Version funktionieren Push Benachrichtigungen, auch wenn die App gerade nicht aktiv ist. Nur wenn nach dem Abonnieren des Warnfeeds eine Push Nachricht ankommt, funktionieren die Push Benachrichtigungen. Wenn das nicht passiert, starten sie die App später neu. Die Funktion muss in dessen zuverlässigkeit noch ausgebaut werden.\nAchten sie darauf, die App regelmäßig aufzurufen.\nBei Fehlern beachten sie folgende Hinweise:"
              Button {
                  text: "Weitere Informationen (online)"
                  color: UbuntuColors.green
