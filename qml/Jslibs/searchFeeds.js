@@ -3086,7 +3086,6 @@ var apiData = {
 	}
 }
 function register(domain, token, callback) {
-    console.log("TOKEN:", token);
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET",apiData['searchDomain']['host']+'/register.php?rss='+domain+"&token="+token);
 	xhr.onreadystatechange = function() {
@@ -3107,7 +3106,6 @@ function register(domain, token, callback) {
 function del(domain, token, callback) {
     console.log("delete");
     console.log("DOM:", domain);
-    console.log("TOKEN:", token);
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET",apiData['searchDomain']['host']+'/delete.php?rss='+domain+"&token="+token);
 	xhr.onreadystatechange = function() {
