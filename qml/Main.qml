@@ -1,11 +1,11 @@
 
 import QtQuick 2.9
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 import QtQuick.Controls 2.2 as QControls
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
-import Ubuntu.Content 1.3
+import Lomiri.Content 1.3
 import QtWebEngine 1.7
 
 import "Components/UI"
@@ -14,7 +14,7 @@ import "Pages"
 import "helpers"
 import "Jslibs/rssAPI.js" as RssAPI
 import "Jslibs/searchFeeds.js" as GetHelper
-import Ubuntu.PushNotifications 0.1
+import Lomiri.PushNotifications 0.1
 
 MainView {
     Component {
@@ -25,7 +25,7 @@ MainView {
              text: "In dieser Version funktionieren Push Benachrichtigungen, auch wenn die App gerade nicht aktiv ist. Diese Funktion muss jedoch in dessen zuverlässigkeit noch ausgebaut werden.\nAchten sie darauf, die App regelmäßig aufzurufen.\nBei Fehlern beachten sie folgende Hinweise:"
              Button {
                  text: "Weitere Informationen (online)"
-                 color: UbuntuColors.green
+                 color: LomiriColors.green
                  onClicked: Qt.openUrlExternally("https://infoportal.ddns.net/entwickler/hinweis2.html")
              }
              Button {
@@ -34,7 +34,7 @@ MainView {
              }
              Button {
                  text: "Dialog Schließen"
-                 color: UbuntuColors.orange
+                 color: LomiriColors.orange
                  onClicked: PopupUtils.close(dialogue)
              }
          }
@@ -59,7 +59,6 @@ MainView {
     property alias pushtoken : root.token
     property alias oldfeed: root.oldfeed
 	onUrlsChanged : {
-		console.log("onUrlsChanged")
 		mainFeed.updateFeed();
 		//appSettings.sync();
 	}
@@ -273,12 +272,12 @@ MainView {
 			}
 		}
 		onImportRequested: {
-			console.log("Get Uknown import type with the following items :");
-			for ( var i = 0; i < transfer.items.length; i++ ) {
-				if ( transfer.items[i]  ) {
-					console.log(JSON.stringify(transfer.items[i]));
-				}
-			}
+			// console.log("Get Uknown import type with the following items :");
+			// for ( var i = 0; i < transfer.items.length; i++ ) {
+			// 	if ( transfer.items[i]  ) {
+			// 		console.log(JSON.stringify(transfer.items[i]));
+			// 	}
+			// }
 		}
 	}
 	

@@ -1,6 +1,6 @@
 
 import QtQuick 2.9
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Page {
 	id:_infoPage
@@ -44,7 +44,7 @@ Page {
           width:height
           source:Qt.resolvedUrl("../../assets/splash.svg")
           layer.enabled: true
-          layer.effect: UbuntuShapeOverlay {
+          layer.effect: LomiriShapeOverlay {
               relativeRadius: 0.75
            }
         }
@@ -65,7 +65,7 @@ Page {
 
     }
 
-    UbuntuListView {
+    LomiriListView {
          anchors {
             top: aboutCloumn.bottom
             bottom: parent.bottom

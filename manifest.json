@@ -18,5 +18,5 @@
     },
     "version": "@VERSION@",
     "maintainer": "s60w79 <ernetnakisuml@gmail.com>",
-    "framework" : "@CLICK_FRAMEWORK@"
+    "framework" : "ubuntu-sdk-20.04"
 }

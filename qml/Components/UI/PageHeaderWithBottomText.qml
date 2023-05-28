@@ -1,6 +1,6 @@
 
 import QtQuick 2.9
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtQuick.Controls 2.2 as QControls
 import QtQuick.XmlListModel 2.0
 
@@ -13,8 +13,8 @@ PageHeader {
 		clip:true
 		opacity:0
 		visible: opacity !== 0;
-		 Behavior on opacity { UbuntuNumberAnimation { duration:UbuntuAnimation.SlowDuration } }
-		 Behavior on height { UbuntuNumberAnimation { duration:UbuntuAnimation.SlowDuration } }
+		 Behavior on opacity { LomiriNumberAnimation { duration:LomiriAnimation.SlowDuration } }
+		 Behavior on height { LomiriNumberAnimation { duration:LomiriAnimation.SlowDuration } }
 		
         height: visible ?  msgText.height + units.gu(1) : 0
 		width:parent.width

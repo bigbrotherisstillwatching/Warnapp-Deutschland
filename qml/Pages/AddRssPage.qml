@@ -1,6 +1,6 @@
 
 import QtQuick 2.9
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtQuick.Controls 2.2 as QControls
 
 import "../Components"
@@ -47,7 +47,7 @@ Page {
 			onClicked : addOrSearchFromText();
 		}
 	}
-	UbuntuListView {
+	LomiriListView {
 		id:searchResults
 		anchors {
 			top:searchRow.bottom

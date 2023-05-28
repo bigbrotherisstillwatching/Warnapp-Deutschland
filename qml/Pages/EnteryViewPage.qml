@@ -1,8 +1,8 @@
 import QtQuick 2.9
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtQuick.Controls 2.2 as QControls
 import QtWebEngine 1.7
-import Ubuntu.Content 1.3
+import Lomiri.Content 1.3
 
 import "../Components"
 
@@ -124,7 +124,7 @@ Page {
 		}
 		interactive:false
 		
-		Behavior on contentX { UbuntuNumberAnimation { duration:UbuntuAnimation.BriskDuration}}
+		Behavior on contentX { LomiriNumberAnimation { duration:LomiriAnimation.BriskDuration}}
 		contentX : swipeArea.pressed && (Math.abs(swipeArea.distance) > swipeArea.width/4 ) ? -swipeArea.distance : 0
 		
 		Flickable {

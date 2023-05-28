@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the s60w79.warnapp-deutschland.s60w79 package.
+# This file is distributed under the same license as the s60w79.warnapp-deutschland package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: s60w79.warnapp-deutschland.s60w79\n"
+"Project-Id-Version: s60w79.warnapp-deutschland\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-05 20:57+0000\n"
+"POT-Creation-Date: 2022-12-10 16:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,37 +38,37 @@ msgid ""
 "Denken sie an ihre Mitmenschen, teilen sie wichtige Meldungen auch per SMS!"
 msgstr ""
 
-#: ../qml/Main.qml:132 ../qml/Main.qml:136 ../qml/Pages/Information.qml:57
+#: ../qml/Main.qml:149 ../qml/Main.qml:153 ../qml/Pages/Information.qml:57
 #: s60w79.warnapp-deutschland.desktop.in.h:1
 msgid "Warnapp Deutschland"
 msgstr ""
 
-#: ../qml/Main.qml:148 ../qml/Pages/AddRssPage.qml:45
+#: ../qml/Main.qml:165 ../qml/Pages/AddRssPage.qml:46
 #: ../qml/Pages/ManageFeedsPage.qml:23
 msgid "Gebiet hinzufügen"
 msgstr ""
 
-#: ../qml/Main.qml:155 ../qml/Pages/SettingsPage.qml:13
+#: ../qml/Main.qml:172 ../qml/Pages/SettingsPage.qml:13
 msgid "Einstellungen"
 msgstr ""
 
-#: ../qml/Main.qml:163
+#: ../qml/Main.qml:180
 msgid "Ascending"
 msgstr ""
 
-#: ../qml/Main.qml:163
+#: ../qml/Main.qml:180
 msgid "Descending"
 msgstr ""
 
-#: ../qml/Main.qml:163
+#: ../qml/Main.qml:180
 msgid "Toggle Sort (%1) "
 msgstr ""
 
-#: ../qml/Main.qml:235
+#: ../qml/Main.qml:252
 msgid "Gebiet hinzugefügt: %1"
 msgstr ""
 
-#: ../qml/Main.qml:268
+#: ../qml/Main.qml:285
 msgid "Gebiet hinzu gefügt : %1"
 msgstr ""
 
@@ -76,11 +76,11 @@ msgstr ""
 msgid "Neues Gebiet hinzufügen"
 msgstr ""
 
-#: ../qml/Pages/AddRssPage.qml:34
+#: ../qml/Pages/AddRssPage.qml:35
 msgid "Geben sie den Namen eines Landkreises ein"
 msgstr ""
 
-#: ../qml/Pages/AddRssPage.qml:45
+#: ../qml/Pages/AddRssPage.qml:46
 msgid "Suchen"
 msgstr ""
 
@@ -125,7 +125,7 @@ msgid "Informationen"
 msgstr ""
 
 #: ../qml/Pages/Information.qml:18
-msgid "Anleitungen & Datenschutz"
+msgid "Anleitungen"
 msgstr ""
 
 #: ../qml/Pages/Information.qml:19
@@ -138,6 +138,14 @@ msgstr ""
 
 #: ../qml/Pages/Information.qml:21
 msgid "Spenden (an S60W79 oder Darkeye)"
+msgstr ""
+
+#: ../qml/Pages/Information.qml:22
+msgid "Nutzer Statistiken"
+msgstr ""
+
+#: ../qml/Pages/Information.qml:23
+msgid "Datenschutz"
 msgstr ""
 
 #: ../qml/Pages/Information.qml:25
@@ -156,17 +164,17 @@ msgstr ""
 msgid "Version %1"
 msgstr ""
 
-#: ../qml/Pages/MainFeedPage.qml:180
+#: ../qml/Pages/MainFeedPage.qml:182
 msgid "Meldungen werden geladen"
 msgstr ""
 
-#: ../qml/Pages/MainFeedPage.qml:181
+#: ../qml/Pages/MainFeedPage.qml:183
 msgid ""
 "Bisher sind keine Gebiete in der Benachrichtigungsliste. Tippen sie auf '+' "
 "um ein Landkreis oder eine Kreisfreie Stadt hinzu zu fügen."
 msgstr ""
 
-#: ../qml/Pages/MainFeedPage.qml:275 ../qml/Pages/ManageBookmarksPage.qml:18
+#: ../qml/Pages/MainFeedPage.qml:277 ../qml/Pages/ManageBookmarksPage.qml:18
 msgid "Gespeicherte Meldungen"
 msgstr ""
 

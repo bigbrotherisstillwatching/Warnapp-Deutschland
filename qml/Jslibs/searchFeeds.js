@@ -2861,7 +2861,6 @@ if(a.length == 0) return b.length;
 }
 function searchDomain(domain, callback) {
     var test1 = new Date();
-    console.log("test", test1.toDateString());
     //It's Easter time...
     if(levenshteinDistance(domain, "Postillion") < 2 || levenshteinDistance(domain, "Nachrichten") < 2 || levenshteinDistance(domain, "News") < 2 || levenshteinDistance(domain, "Bin traurig") < 3 || levenshteinDistance(domain, "aufmunterung") < 3){
         //Postillion
@@ -2936,7 +2935,6 @@ function searchDomain(domain, callback) {
 }
 
 function rss2name(name, callback){
-    console.log("AGSses");
     var liste = [];
     for(var j = 0; j < name.length; j++){
     if(name[j] == "https://www.blogger.com/feeds/746298260979647434/posts/default"){
@@ -2944,7 +2942,6 @@ function rss2name(name, callback){
         liste.push({"title":"Postillion", "description":"Ehrliche Nachrichten, Unabhängig, schnell, seit 1845", "url":"https://www.blogger.com/feeds/746298260979647434/posts/default", "favicon":null});
     }
     var ags = name[j].substr(name[j].length-16, 5); 
-    console.log(ags);
     //makes URL to AGS Number
     for(var i = 0; i < kreisliste.length; i++){
         if(kreisliste[i]["AGS"] == ags){
@@ -2953,8 +2950,6 @@ function rss2name(name, callback){
             }
         }
     }
-    console.log("Test:");
-    console.log(liste[0]["title"]);
     callback(liste);
 }
 
@@ -2965,7 +2960,7 @@ var apiData = {
 	}
 }
 function register(domain, token, callback) {
-    console.log("TOKEN:", token);
+    //console.log("TOKEN:", token);
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET",apiData['searchDomain']['host']+'/register.php?rss='+domain+"&token="+token);
 	xhr.onreadystatechange = function() {
@@ -2976,9 +2971,9 @@ function register(domain, token, callback) {
 	xhr.send();
 }
 function del(domain, token, callback) {
-    console.log("delete");
-    console.log("DOM:", domain);
-    console.log("TOKEN:", token);
+    // console.log("delete");
+    // console.log("DOM:", domain);
+    // console.log("TOKEN:", token);
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET",apiData['searchDomain']['host']+'/delete.php?rss='+domain+"&token="+token);
 	xhr.onreadystatechange = function() {
