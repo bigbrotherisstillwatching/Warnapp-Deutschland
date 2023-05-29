@@ -22,7 +22,7 @@ MainView {
          Dialog {
              id: dialogue
              title: "Bitte beachten:"
-             text: "In dieser Version funktionieren Push Benachrichtigungen, auch wenn die App gerade nicht aktiv ist. Diese Funktion muss jedoch in dessen zuverlässigkeit noch ausgebaut werden.\nAchten sie darauf, die App regelmäßig aufzurufen.\nBei Fehlern beachten sie folgende Hinweise:"
+             text: "In dieser Version funktionieren Push Benachrichtigungen, auch wenn die App gerade nicht aktiv ist. Möglicherweise funktionieren die Benachrichtigungen aber nicht, wenn die App im Vordergrund ist.\nAchten sie darauf, die App regelmäßig aufzurufen.\nBei Fehlern beachten sie folgende Hinweise:"
              Button {
                  text: "Weitere Informationen (online)"
                  color: LomiriColors.green
@@ -117,6 +117,21 @@ MainView {
 	// ---------------------------- UI ----------------------
 	
 	AdaptivePageLayout {
+				Component {
+         id: regfail
+         Dialog {
+             
+             id: dia
+             title: "Fehler"
+             text: "Das Gebiet wurde hinzu gefügt, aber die Push benachrichtigungen konnten nicht aktiviert werden.\nBitte starten Sie die App später neu.\nSie können das Gebiet entfernen und wieder hinzufügen um die Registrierung erneut zu versuchen.\nPrüfen Sie außerdem Ihre Internetverbindung."
+             Button {
+                 text: "Schließen"
+                 color: LomiriColors.red
+                 onClicked: PopupUtils.close(dia)
+             }
+         }
+    }
+
         Component.onCompleted:PopupUtils.open(dialog)
 		id:mainLayout
 		anchors {

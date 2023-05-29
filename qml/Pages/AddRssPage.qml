@@ -5,6 +5,8 @@ import QtQuick.Controls 2.2 as QControls
 
 import "../Components"
 import "../Jslibs/searchFeeds.js" as SearchFeeds
+import Lomiri.Components.Popups 1.3
+
 
 Page {
 	id:_addrsspage
@@ -77,7 +79,13 @@ Page {
 			}
 			onClicked:{
 				root.mainBillboard.addFeed(modelData.url);
-                SearchFeeds.register(modelData.url, root.token, function(){});
+				var informed = false;
+                SearchFeeds.register(modelData.url, root.token, function(suc){
+				if(!suc && !informed){
+					PopupUtils.open(regfail);
+					informed = true;
+				}
+				});
 				mainLayout.removePages(_addrsspage);
 			}
 		}

@@ -2964,9 +2964,12 @@ function register(domain, token, callback) {
 	var xhr = new XMLHttpRequest();
 	xhr.open("GET",apiData['searchDomain']['host']+'/register.php?rss='+domain+"&token="+token);
 	xhr.onreadystatechange = function() {
+        console.log(xhr.status);
 		if (xhr.readyState == 4 && xhr.status == 200) {
-			callback();
-		}
+			callback(true);
+		}else{
+            callback(false);
+        }
 	};
 	xhr.send();
 }
